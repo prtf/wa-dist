@@ -89,6 +89,18 @@ $(function() {
         });
 
 
+        $('.section-tours .nav-links .links li').click(function(){
+		var tab_id = $(this).attr('tabid');
+
+		$('.section-tours .nav-links .links li').removeClass('active');
+		$('.carousel-tours').removeClass('active');
+
+		$(this).addClass('active');
+		$("#tabcontent"+tab_id).addClass('active');
+
+	});
+
+
 
 
 });
