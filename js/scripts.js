@@ -55,6 +55,7 @@ $(function() {
 		$('input[name=tel]').inputmask("+38(999) 999-9999");
 		$('select').niceSelect();
 		$('.review').mCustomScrollbar();
+		$('.submenu-overflow').mCustomScrollbar();
 
 
 		$('.form-tour').validate({
@@ -90,17 +91,15 @@ $(function() {
 
 
         $('.section-tours .nav-links .links li').click(function(){
-		var tab_id = $(this).attr('tabid');
+			var tab_id = $(this).attr('tabid');
 
-		$('.section-tours .nav-links .links li').removeClass('active');
-		$('.carousel-tours').removeClass('active');
+			$('.section-tours .nav-links .links li').removeClass('active');
+			$('.carousel-tours').removeClass('active');
 
-		$(this).addClass('active');
-		$("#tabcontent"+tab_id).addClass('active');
+			$(this).addClass('active');
+			$("#tabcontent"+tab_id).addClass('active');
 
-	});
-
-
+		});
 
 
 });
